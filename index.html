@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Temples and Pilgrimages of India</title>
+    <link rel="stylesheet" href="delhi.css">
+    <style>
+        /* Reset body */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fdf6f0;
+            color: #333;
+            text-align: center;
+        }
+
+        h1.case {
+            font-size: 2.5em;
+            margin-top: 30px;
+            text-decoration: underline;
+            text-underline-offset: 6px;
+            color: #4a2f0b;
+        }
+
+        /* Reel container */
+        .reel-container {
+            width: 80%;          /* smaller width */
+            max-width: 700px;    /* max width */
+            height: 250px;       /* reduced height */
+            margin: 30px auto;
+            overflow: hidden;
+            border-radius: 12px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+            position: relative;
+        }
+
+        /* Reel track */
+        .reel-track {
+            display: flex;
+            width: calc(700px * 5); /* total width = image count * container width */
+            animation: slide 100s linear infinite; /* slower speed */
+        }
+
+        .reel-track img {
+            width: 700px;      /* match container width */
+            height: 250px;     /* match container height */
+            object-fit: cover;
+            flex-shrink: 0;
+            transition: transform 0.3s;
+        }
+
+        .reel-track img:hover {
+            transform: scale(1.05);
+            cursor: pointer;
+        }
+
+        /* Animation keyframes */
+        @keyframes slide {
+            0% { transform: translateX(0); }
+            20% { transform: translateX(-700px); }
+            40% { transform: translateX(-1400px); }
+            60% { transform: translateX(-2100px); }
+            80% { transform: translateX(-2800px); }
+            100% { transform: translateX(0); }
+        }
+
+        /* State links buttons */
+        .state-links {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin: 40px 0;
+            gap: 15px;
+        }
+
+        .state-links a {
+            text-decoration: none;
+        }
+
+        .state-links p {
+            background-color: #ff7f50;
+            color: white;
+            padding: 12px 25px;
+            border-radius: 8px;
+            font-weight: bold;
+            margin: 0;
+            transition: 0.3s;
+        }
+
+        .state-links p:hover {
+            background-color: #ff5722;
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+            cursor: pointer;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .reel-container {
+                height: 180px;
+            }
+            .reel-track img {
+                height: 180px;
+                width: 100%;
+            }
+            h1.case {
+                font-size: 2em;
+            }
+            .state-links p {
+                padding: 10px 18px;
+                font-size: 0.9em;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <h1 class="case">Major Temples and Pilgrimages in India</h1>
+
+    <!-- Reel slider -->
+    <div class="reel-container">
+        <div class="reel-track">
+            <img src="static/Golden-Temple.jpg" alt="Golden Temple">
+            <img src="static/birlamandir.jpg" alt="Birla Mandir">
+            <img src="static/trimbakeshwar.png" alt="Trimbakeshwar Temple">
+            <img src="static/iskcon.jpg" alt="ISKCON Temple">
+            <img src="static/konark-temple.jfif" alt="Konark Temple">
+        </div>
+    </div>
+
+    <!-- Internal links as buttons -->
+    <div class="state-links">
+        <a href="delhi.html"><p>Delhi</p></a>
+        <a href="punjab.html"><p>Punjab</p></a>
+        <a href="hp.html"><p>Himachal Pradesh</p></a>
+        <a href="up.html"><p>Uttar Pradesh</p></a>
+        <a href="kashmir.html"><p>Kashmir</p></a>
+        <a href="maharashtra.html"><p>Maharashtra</p></a>
+        <a href="raj.html"><p>Rajasthan</p></a>
+        <a href="karnataka.html"><p>Karnataka</p></a>
+        <a href="kerala.html"><p>Kerala</p></a>
+        <a href="odisha.html"><p>Odisha</p></a>
+        <a href="tamilnadu.html"><p>Tamil Nadu</p></a>
+        <a href="uttarakhand.html"><p>Uttarakhand</p></a>
+        <a href="wb.html"><p>West Bengal</p></a>
+        <a href="mp.html"><p>Madhya Pradesh</p></a>
+        <a href="assam.html"><p>Assam</p></a>
+        <a href="haryana.html"><p>Haryana</p></a>
+        <a href="gujarat.html"><p>Gujarat</p></a>
+        <a href="bihar.html"><p>Bihar</p></a>
+        <a href="sikkim.html"><p>Sikkim</p></a>
+        <a href="goa.html"><p>Goa</p></a>
+        <a href="telangana.html"><p>Telangana</p></a>
+        <a href="ap.html"><p>Andhra Pradesh</p></a>
+    </div>
+
+    <!-- Enquiry form -->
+
+    <div class="temple-title" id="enquiry">
+    <h2 class="case">Enquiry Form</h2>
+
+    <form action="#" method="post" class="case"></form>
+
+    <label>Name:</label><br>
+    <input type="text" name="name" required><br><br>
+    
+    <label>Email</label><br>
+    <input type="email" name="email" required><br><br>
+
+    <label>State interested in:</label><br>
+    <select name="state">
+    <option>Delhi</option>
+    <option>Punjab</option>
+    <option>Haryana</option>
+    <option>Uttar Pradesh</option>
+    <option>Madhya Pradesh</option>
+    <option>Uttarakhand</option>
+    <option>Himachal Pradesh</option>
+    <option>West Bengal</option>
+    <option>Assam</option>
+    <option>Kashmir</option>
+    <option>Maharashtra</option>
+    <option>Kerala</option>
+    <option>Karnataka</option>
+    <option>Tamil Nadu</option>
+    <option>Telangana</option>
+    <option>Goa</option>
+    <option>Sikkim</option>
+    <option>Gujarat</option>
+    <option>Bihar</option>
+    <option>Rajasthan</option>
+    <option>Odisha</option>
+    </select><br><br>
+
+    <label>Your Message</label><br>
+    <textarea name="message" rows="4" cols="40"></textarea><br><br>
+    
+    <input type="submit" value="submit">
+    </form>
+    </div>
+
+
+</body>
+</html>

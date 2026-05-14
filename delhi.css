@@ -1,0 +1,201 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+/* Headings*/
+
+h1, .para {
+    color: red;
+    text-align: center;
+    font-size: 36px;
+    font-family: cursive;
+}
+
+/* Temple card layout #b1b879 */
+
+.temple {
+    background-color: whitesmoke;
+    padding: 20px;
+    margin: 20px auto;
+    width: 80%;
+    border-radius: 10px;
+    text-align: left;
+}
+.temple p:first-of-type {
+    text-align: center;   /* keep temple name centered */
+    font-weight: normal;
+}
+ .temple-title {
+    text-align: center;  /* center the temple name */ 
+    font-weight: bold;   /* make it bold */
+    font-size: 20px;     /* adjust size */
+    margin-bottom: 10px; /* optional spacing below heading */
+    font-family: cursive;
+    color: black;
+} 
+.navbar {
+    display: flex;
+    gap: 100px;
+}
+
+.home-btn {
+    background-color: #ff9933;
+    color: white;
+    padding: 10px 18px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    transition: 0.3s;
+    display: inline-block;
+}
+
+.home-btn:hover {
+    background-color: #e67e22;
+    transform: scale(1.05);
+}
+
+/* temple images */
+
+/*.temple img {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 500px;
+    border: 2px solid black;
+    border-radius: 10px;
+    
+}*/
+.temple img {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 500px;
+    border: 2px solid black;
+    border-radius: 10px;
+    
+}
+.temple-img {
+    display: flex;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 500px;
+    border: 2px solid black;
+    border-radius: 10px;
+    gap: 20px;
+    justify-content: center;
+    
+}
+
+/* 5 Text styles */
+.uppercase, .lowercase, .case {
+    font-family: cursive;
+    font-size: 18px;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Hover effects (optional) */
+/* .temple:hover {
+    transform: scale(1.02);
+    transition: 0.3s;
+} */
+
+/* Responsive design */
+
+
+
+.uppercase{
+    font-family: cursive;
+    font-size: 30px;
+}
+.lowercase{
+    font-family: cursive;
+    font-size: 20px;
+    color: blueviolet;
+}
+.case{
+    font-family: cursive;
+    font-size: 20px;
+    color: brown;
+}
+.welcome-container{
+    width: 80%;
+    max-width: 700px;
+    margin: 20px auto;
+    overflow: hidden;
+    border-radius: 8px;
+    background-color: pink;
+}
+.welcome-text{
+    display: inline-block;
+    white-space: nowrap;
+    color: black;
+    font-size: 18px;
+    padding: 10px;
+    animation: moveText 35s linear infinite;
+    font-family: cursive;
+    
+}
+@keyframes moveText{
+    0%{
+        transform: translateX(100%);
+    }
+    100%{
+        transform: translateX(-100%);
+    }
+}
+
+.floating-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #ff5722;
+    color: white;
+    padding: 12px 18px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    transition: 0.3s;
+}
+
+.floating-btn:hover {
+    background-color: #e64a19;
+    transform: scale(1.1);
+}
+
+/* Media Query (ALWAYS AT THE END) 
+
+@media  and (max-width: 900px) {
+    .temple {
+        width:80%
+    }
+}
+
+@media  and (max-width: 600px) {
+    .temple {
+        width:100%
+    }
+}*/
+
+.top-btn {
+    position: fixed;
+    bottom: 80px;
+    right: 20px;
+    display: none;
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 12px 15px;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 16px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.3);
+    transition: 0.3s;
+}
+
+.top-btn:hover {
+    background-color: #ff5722;
+    transform: scale(1.1);
+}
